@@ -18,8 +18,8 @@ public class PlantService {
     private float minTemperature = 0;
     private boolean hasNotified = false;
 
-    public static final String ACCOUNT_SID = "AC7326d75e7a6659a58b6993c9245ce30f";
-    public static final String AUTH_TOKEN = "8979062d8b4c09642efe3204a0870a4e";
+    public static final String ACCOUNT_SID = "redacted";
+    public static final String AUTH_TOKEN = "redacted";
 
 
     public float getMaxTemperature() {
