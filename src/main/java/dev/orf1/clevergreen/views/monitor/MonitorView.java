@@ -5,13 +5,11 @@ import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.notification.Notification;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.textfield.TextField;
-import com.vaadin.flow.router.PageTitle;
-import com.vaadin.flow.router.Route;
-import dev.orf1.clevergreen.views.MainLayout;
+
 import javax.annotation.security.PermitAll;
 
-@PageTitle("Monitor")
-@Route(value = "monitor", layout = MainLayout.class)
+//@PageTitle("Monitor")
+//@Route(value = "monitor", layout = MainLayout.class)
 @PermitAll
 public class MonitorView extends HorizontalLayout {
 

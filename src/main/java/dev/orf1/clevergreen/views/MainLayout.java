@@ -27,9 +27,6 @@ import dev.orf1.clevergreen.views.support.SupportView;
 import java.io.ByteArrayInputStream;
 import java.util.Optional;
 
-/**
- * The main view is a top-level placeholder for other views.
- */
 public class MainLayout extends AppLayout {
 
     private H2 viewTitle;
@@ -67,23 +64,9 @@ public class MainLayout extends AppLayout {
     }
 
     private AppNav createNavigation() {
-        // AppNav is not yet an official component.
-        // For documentation, visit https://github.com/vaadin/vcf-nav#readme
         AppNav nav = new AppNav();
-
-        if (accessChecker.hasAccess(HomeView.class)) {
-            nav.addItem(new AppNavItem("Home", HomeView.class, "la la-home"));
-
-        }
-        if (accessChecker.hasAccess(MonitorView.class)) {
-            nav.addItem(new AppNavItem("Monitor", MonitorView.class, "la la-leaf"));
-
-        }
-        if (accessChecker.hasAccess(SupportView.class)) {
-            nav.addItem(new AppNavItem("Support", SupportView.class, "la la-comments"));
-
-        }
-
+        nav.addItem(new AppNavItem("Home", HomeView.class, "la la-leaf"));
+        nav.addItem(new AppNavItem("Support", SupportView.class, "la la-comments"));
         return nav;
     }
 

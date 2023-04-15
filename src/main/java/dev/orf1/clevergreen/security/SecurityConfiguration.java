@@ -23,6 +23,8 @@ public class SecurityConfiguration extends VaadinWebSecurity {
     protected void configure(HttpSecurity http) throws Exception {
 
         http.authorizeRequests().requestMatchers(new AntPathRequestMatcher("/images/*.png")).permitAll();
+        http.authorizeRequests().requestMatchers(new AntPathRequestMatcher("/api/*")).anonymous();
+
         super.configure(http);
         setLoginView(http, LoginView.class);
     }
